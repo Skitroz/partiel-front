@@ -33,7 +33,6 @@ function Accueil() {
     { id: 37, name: "Western" }
   ];
 
-  // Fetch movies function
   const fetchMovies = useCallback(async (query, pageNumber) => {
     try {
       const url = `https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=fr-FR&page=${pageNumber}&with_genres=${selectedGenre}`;
